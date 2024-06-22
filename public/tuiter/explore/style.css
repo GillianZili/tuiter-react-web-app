@@ -1,0 +1,119 @@
+:root {
+    --border-color: rgb(129, 133, 136);
+    --text-color-bright: white;
+    --text-color-dim: gray;
+    --standard-border: var(--border-color) solid 1px;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-left: var(--standard-border);
+    border-right: var(--standard-border);
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.wd-container {
+    padding: 16px;
+}
+
+.wd-search-box {
+    flex-grow: 1;
+}
+
+.wd-search-box>input {
+    background-color: darkgray;
+    color: white;
+    height: 30px;
+    width: calc(100% - 90px);
+    border-radius: 15px;
+    padding-left: 30px;
+}
+
+
+.wd-search-box ::placeholder {
+    color: white;
+    opacity: 0.4;
+}
+
+
+.wd-icon {
+    width: 30px;
+    height: 20px;
+    color: rgb(127, 238, 248);
+    font-size: 30px;
+    float: right;
+}
+
+.wd-navigate-bar {
+    display: flex;
+    /*使元素在一个容器内按照灵活的方向（水平或垂直）进行排列，使得它们能够自适应不同的屏幕尺寸和设备 */
+    /* width: inherit; */
+    /*将元素的宽度设置为继承其父元素的宽度*/
+    /* padding-bottom: 0; */
+}
+
+.wd-navigate-link {
+    height: 30px;
+    color: rgb(110, 118, 125);
+    margin: auto;
+    text-align: center;
+}
+
+.wd-selected-navigate-link {
+    padding: 16px;
+    color: rgb(29, 161, 242);
+    border-bottom: rgb(29, 161, 242) solid 3px;
+    font-size: 15px;
+}
+
+.wd-bottom-line {
+    display: flex;
+    border-bottom: var(--border-color) solid 1px;
+}
+
+.wd-text-white {
+    color: var(--text-color-bright);
+    /*已经在root中定义过了*/
+}
+
+.wd-text-gray {
+    color: var(--text-color-dim);
+    /*已经在root中定义过了*/
+}
+
+.wd-line-gap {
+    padding-bottom: 10px;
+}
+
+.wd-post-context {
+    flex-grow: 1;
+}
+
+.wd-charateristic-size{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wd-subtitle{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.wd-post-img {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    float: right;
+  }
+
+
+
