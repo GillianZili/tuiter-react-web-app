@@ -1,0 +1,48 @@
+@import url("../../vendors/bootstrap/css/bootstrap.min.css");
+@import url("../../vendors/fontawesome/css/all.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+body {
+    border-left: none;
+    border-right: none;
+    background-color: white;
+}
+
+.wd-bottom {
+    margin-top: 10px;
+}
+
+.wd-search-box {
+    flex-grow: 1;
+}
+
+.wd-search-box>input {
+    background-color: white;
+    height: 30px;
+    width: calc(100% - 90px);
+    border-radius: 15px;
+    padding-left: 30px;
+}
+
+.wd-search-box ::placeholder {
+    color: rgb(59, 56, 56);
+    opacity: 0.4;
+}
+
+
+.wd-float-right {
+    float: right;
+}
+
+.front-size > li > a {
+    font-size: 14px;
+}
+
+.logo-shape{
+    border-radius:50%;
+}
+
+.title-style{
+    color:white;
+    font-weight: bold;
+}
