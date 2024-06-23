@@ -34,15 +34,39 @@ body {
     float: right;
 }
 
-.front-size > li > a {
+.front-size>li>a {
     font-size: 14px;
 }
 
-.logo-shape{
-    border-radius:50%;
+.logo-shape {
+    border-radius: 50%;
 }
 
-.title-style{
-    color:white;
+.title-style {
+    color: white;
     font-weight: bold;
+}
+
+.btn-primary-black {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.my-nav-tabs {
+    padding-top: 15px;
+}
+
+.nav-item>.my-link {
+    color: gray;
+    font-weight: 700;
+    padding: none;
+    margin-right: 40px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.nav-item>.myactive {
+    color: black;
+    border-bottom: 5px solid #0d6efd;
 }
