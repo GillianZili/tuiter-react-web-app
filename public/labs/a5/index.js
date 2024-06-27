@@ -358,6 +358,7 @@ const init = () => {
     const showHandler = () => {hideShowHeader.show();}
     hideBtn.click(hideHandler);//为 hideBtn（即 id 为 hide 的元素）添加了一个点击事件监听器。当 hideBtn 被点击时，将执行 hideHandler 函数，从而隐藏 hideShowHeader
     showBtn.click(showHandler);
+    hideBtn.hover(()=>console.log("hover"));
 
 }
 $(init);

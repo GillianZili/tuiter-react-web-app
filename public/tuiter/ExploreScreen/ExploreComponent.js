@@ -44,3 +44,5 @@ const ExploreComponent = () => {
         </div>
     `;
 };
+
+export default ExploreComponent;

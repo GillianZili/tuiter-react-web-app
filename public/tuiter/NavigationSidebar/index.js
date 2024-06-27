@@ -1,16 +1,8 @@
 const NavigationSidebar = ({ active = "" }) => {
     const l = [
       { href: "/", icon: "fab fa-twitter", text: "" },
-      {
-        href: "/tuiter/HomeScreen/index.html",
-        icon: "fas fa-home",
-        text: "Home",
-      },
-      {
-        href: "/tuiter/explore/index.html",
-        icon: "fas fa-hashtag",
-        text: "Explore",
-      },
+      { href: "/tuiter/HomeScreen/index.html",icon: "fas fa-home",text: "Home",},
+      { href: "/tuiter/explore/index.html",icon: "fas fa-hashtag",text: "Explore",},
       { href: "/", icon: "fas fa-bell", text: "Notifications" },
       { href: "/", icon: "fas fa-envelope", text: "Messages" },
       { href: "/", icon: "fas fa-bookmark", text: "Bookmarks" },
