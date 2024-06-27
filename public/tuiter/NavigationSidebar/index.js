@@ -13,8 +13,8 @@ const NavigationSidebar = ({ active = "" }) => {
     const content = l
       .map(
         (info) =>
-          `<a class="list-group-item ${
-            active === info.text ? "active" : ""
+          `<a class="list-group-item list-group-item-bg ${
+            active === info.text ? "myactive" : ""
           }" href=${info.href}>
               <div class="row align-items-center">
                 <i class="col-2 ${info.icon}"></i>
@@ -31,7 +31,7 @@ const NavigationSidebar = ({ active = "" }) => {
           </div>
           <div class="d-grid mt-2">
               <a href="tweet.html"
-              class="btn btn-primary btn-block rounded-pill">
+              class="btn btn-primary-lightblue btn-block rounded-pill">
               Tweet</a>
           </div>
           `;

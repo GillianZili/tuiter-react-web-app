@@ -1,5 +1,5 @@
 :root {
-    --border-color: rgb(129, 133, 136);
+    --border-color: rgb(47, 51, 54);
     --text-color-bright: white;
     --text-color-dim: gray;
     --standard-border: var(--border-color) solid 1px;
@@ -97,12 +97,12 @@ html {
     flex-grow: 1;
 }
 
-.wd-charateristic-size{
+.wd-charateristic-size {
     font-size: 20px;
     font-weight: bold;
 }
 
-.wd-subtitle{
+.wd-subtitle {
     font-size: 17px;
     font-weight: bold;
 }
@@ -113,7 +113,4 @@ html {
     height: 120px;
     border-radius: 20px;
     float: right;
-  }
-
-
-
+}

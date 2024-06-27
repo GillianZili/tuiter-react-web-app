@@ -1,6 +1,6 @@
 const PostSummaryItem = ({ topic, userName, time, image, title }) => {
     return `
-        <li class="list-group-item">
+        <li class="list-group-item list-group-item-bg">
             <div class="row align-items-center">
               <div class="col-9">
                 <div class="text-muted">${topic}</div>

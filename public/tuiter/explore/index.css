@@ -1,11 +1,12 @@
 @import url("../../vendors/bootstrap/css/bootstrap.min.css");
 @import url("../../vendors/fontawesome/css/all.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("../style.css");
 
 body {
     border-left: none;
     border-right: none;
-    background-color: rgb(10, 10, 10);
+    background-color: rgb(16, 16, 16);
 }
 
 .wd-bottom {
@@ -34,15 +35,52 @@ body {
     float: right;
 }
 
-.front-size > li > a {
+.front-size>li>a {
     font-size: 14px;
 }
 
-.logo-shape{
-    border-radius:50%;
+.logo-shape {
+    border-radius: 50%;
 }
 
-.title-style{
-    color:white;
+.title-style {
+    color: white;
     font-weight: bold;
+}
+
+.nav-item>.my-link {
+    color: white;
+    font-weight: 500;
+    margin: none;
+    text-decoration: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-item>.myactive {
+    background-color: #3fb8f0;
+    border-radius: 10%;
+}
+
+.btn-primary-lightblue {
+    color: #fff;
+    background-color: #3fb8f0;
+    background-color: #3fb8f0;
+}
+
+.list-group-item-bg {
+    background-color: rgb(41, 40, 40);
+    border-color: rgb(41, 40, 40);
+    color: white;
+}
+
+.myactive {
+    background-color: #3fb8f0;
+    border-color: #3fb8f0;
+}
+
+.logo-shape {
+    border-radius: 50%;
 }

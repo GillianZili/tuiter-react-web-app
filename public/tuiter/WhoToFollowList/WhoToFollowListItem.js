@@ -1,10 +1,10 @@
 const WhoToFollowListItem = ({ avatarIcon, userName, handle }) => {
     return `
-          <li class="list-group-item">
+          <li class="list-group-item list-group-item-bg">
               <div class="row align-items-center justify-content-between">
                   <div class="row col-9 align-items-center">
                       <img
-                          class="col-4"
+                          class="col-4 logo-shape"
                           src="${avatarIcon}"
                       />
                       <div class="col-8">
@@ -15,7 +15,7 @@ const WhoToFollowListItem = ({ avatarIcon, userName, handle }) => {
                           <div class="text-muted">@${handle}</div>
                       </div>
                   </div>
-                  <button type="submit" class="btn btn-primary rounded-pill col-3">
+                  <button type="submit" class="btn btn-primary-lightblue rounded-pill col-3">
                       Follow
                   </button>
               </div>
