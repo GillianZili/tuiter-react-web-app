@@ -1,3 +1,4 @@
+import React from "react";
 const PostItem = ({ post = {} }) => {
     const {
         avatarImage = "",
@@ -12,28 +13,49 @@ const PostItem = ({ post = {} }) => {
         like = "",
         forward = "",
     } = post;
+    const buttons = [
+        { icon: "bi bi-chat-left-dots", text: comments },
+        { icon: "bi bi-arrow-left-right", text: retuit },
+        { icon: "bi bi-heart", text: like },
+        { icon: "bi bi-escape" },
+    ]
     return (
-        <div class="wd-bookmarks-post">
-            <img src={avatarImage} class="wd-avatar-img" />
-            <div class="wd-bookmarks-post-body">
-                <span class="wd-text-white">{userName}</span>
-                <span class="wd-text-gray">{time}</span>
-                <div class="wd-text-white">{titleText}
-                </div>
-                <div class="wd-bookmarks-post-link">
-                    <img src={image} class="wd-picture" />
-                    <div class="wd-bookmarks-inner-text">
-                        <div class="wd-text-white">{subtitle}</div>
-                        <div class="wd-text-gray">{text}</div>
+        <div className="list-group">
+            <a className="list-group-item">
+                <div className="row justify-content-around">
+                    <div className="col-2">
+                        <img src={avatarImage} className="rounded-circle" height={60} />
+                    </div>
+                    <div className="col-10">
+                        <span className="wd-text-white">{userName}</span>
+                        <span className="wd-text-gray">{time}</span>
+                        <div className="wd-text-white">{titleText}</div>
+                        <div className="position-relative mb-2">
+                            <div className="w-100">
+                                <img src={image} />
+                                {subtitle}
+                                {text}
+                            </div>
+                        </div>
+                        <div
+                            className="align-items-center"
+                            style={{ display: "flex", marginTop: "15px", marginBottom: "15px" }}
+                        >
+
+                            {buttons.map(({ icon, text = "" }) => (
+                                <div
+                                    className="text-muted"
+                                    style={{ flex: 1, display: "flex", gap: "7px" }}
+                                >
+                                    <i className={icon}></i>
+                                    <div>{text}</div>
+                                </div>
+
+                            ))}
+                        </div>
                     </div>
                 </div>
-                <div class="wd-icon-bar">
-                    <a href="#" >{comments}</a>
-                    <a href="#" >{retuit}</a>
-                    <a href="#" >{like}</a>
-                    <a href="#" >{forward}</a>
-                </div>
-            </div>
+            </a>
         </div>
     );
 };

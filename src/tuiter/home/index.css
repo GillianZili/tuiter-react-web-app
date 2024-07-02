@@ -1,0 +1,65 @@
+.wd-avatar-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: left;
+}
+
+.wd-bookmarks-post {
+  border-bottom: var(--standard-border);
+  display: flex;
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.wd-bookmarks-post-body {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 600px;
+  text-align: justify;
+}
+
+.wd-username {
+  display: flex;
+}
+
+.wd-bookmarks-post-link {
+  margin-top: 12px;
+  border: var(--standard-border);
+  border-radius: 20px;
+  width: 600px;
+}
+
+.w-100>img {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: var(--border-color) solid 2px;
+  overflow: hidden;
+}
+
+.wd-bookmarks-inner-text {
+  padding-left: 12px;
+  padding-right: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.wd-icon-bar {
+  display: flex;
+}
+
+.wd-icon-bar > *{/*只作用于这个类下的直接子元素*/
+  margin: auto;
+  font-size: 23px;
+  /* text-align: center; */
+  text-decoration: none;
+  color: var(--text-color-dim);
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.wd-icon-selected {
+  color: rgb(236, 95, 25);
+}

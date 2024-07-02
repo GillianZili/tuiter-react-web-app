@@ -1,7 +1,7 @@
 import React from "react";
 import PostItem from "./PostItem";
 import posts from "./posts";
-import "../explore/index.css";
+import "./index.css";
 
 const HomeComponent = () => {
   return (
