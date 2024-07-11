@@ -1,7 +1,19 @@
 import React, { useState } from "react";
+import { createTuitThunk } from "../../services/tuits-thunks";
+import { useDispatch } from "react-redux";
+
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
-    const tuitClickHandler = () => { console.log(whatsHappening); }
+    const dispatch = useDispatch();
+    const tuitClickHandler = () => {
+        const newTuit = {
+            tuit: whatsHappening,
+            time: "0s",
+        };
+        dispatch(createTuitThunk(newTuit));
+        setWhatsHappening("");
+    };
+
 
     return (
         <div className="row">
@@ -28,7 +40,7 @@ const WhatsHappening = () => {
                         <i className="bi bi-emoji-smile me-3"></i>
                         <i className="bi bi-geo-alt"></i>
                     </div>
-                </div>     
+                </div>
             </div>
             <div className="col-12"><hr /></div>
         </div>
