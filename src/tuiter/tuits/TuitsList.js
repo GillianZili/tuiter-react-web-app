@@ -15,8 +15,8 @@ const TuitList = () => {
                     Loading...
                 </li>
             }
-            {tuitsList.map((t) => (
-                <TuitItem key={t._id} post={t} onLike={() => likeHandler(t._id)} />
+            {tuits.map((t) => (
+                <TuitItem key={t._id} post={t} />
             ))}
         </ul>
     );
