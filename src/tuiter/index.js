@@ -18,11 +18,11 @@ const store = configureStore(
 function Tuiter() {
     return (
         <Provider store={store}>
-            <div class="row mt-2">
-                <div class="col-2 col-md-2 col-lg-1 col-xl-2">
+            <div className="row mt-2">
+                <div className="col-2 col-md-2 col-lg-1 col-xl-2">
                     <NavigationSidebar />
                 </div>
-                <div class="col-10 col-md-8 col-lg-7 col-xl-6"
+                <div className="col-10 col-md-8 col-lg-7 col-xl-6"
                     style={{ "position": "relative" }}>
                     <Routes>
                         <Route path="home" element={<HomeComponent />} />
@@ -32,7 +32,7 @@ function Tuiter() {
                     </Routes>
                     {/* <HomeComponent /> */}
                 </div>
-                <div class="d-none d-sm-none d-md-none d-lg-block col-md-2 col-lg-4 col-xl-4">
+                <div className="d-none d-sm-none d-md-none d-lg-block col-md-2 col-lg-4 col-xl-4">
                     <WhoToFollowList />
                 </div>
             </div>
