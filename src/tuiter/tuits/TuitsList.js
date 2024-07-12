@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import TuitItem from "./TuitItem";
-import { findTuitsThunk } from "../../services/tuits-thunks";
+import { findTuitsThunk, updateTuitThunk } from "../../services/tuits-thunks";
 import { like } from "./tuits-reducer";
 const TuitList = () => {
     const { tuits, loading } = useSelector(state => state.tuitsData)
@@ -16,7 +16,11 @@ const TuitList = () => {
                 </li>
             }
             {tuits.map((t) => (
-                <TuitItem key={t._id} post={t} />
+                <TuitItem key={t._id} post={t} onLike={() => dispatch(updateTuitThunk({
+                    ...t,
+                    likes: t.likes+(t.liked ? - 1 : + 1),
+                    liked: !t.liked
+                }))} />
             ))}
         </ul>
     );
