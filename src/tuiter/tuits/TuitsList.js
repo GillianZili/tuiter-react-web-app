@@ -18,7 +18,7 @@ const TuitList = () => {
             {tuits.map((t) => (
                 <TuitItem key={t._id} post={t} onLike={() => dispatch(updateTuitThunk({
                     ...t,
-                    likes: t.likes+(t.liked ? - 1 : + 1),
+                    likes: t.likes+(t.liked ? - 1 : 1),
                     liked: !t.liked
                 }))} />
             ))}
