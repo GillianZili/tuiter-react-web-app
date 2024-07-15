@@ -7,6 +7,8 @@ const WhatsHappening = () => {
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
         const newTuit = {
+            userName: "default",
+            image:"https://s1.52poke.com/wiki/thumb/6/6b/175Togepi.png/300px-175Togepi.png",
             tuit: whatsHappening,
             time: "0s",
         };
