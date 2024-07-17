@@ -3,20 +3,31 @@ import HelloWorld from "./labs/a6/hello-world.js";
 import Tuiter from "./tuiter";
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router";
+import ProfileScreen from "./screens/profile";
+import LoginScreen from "./screens/login";
+import Navigation from "./components/nav";
 
 function App() {
+  const hello = "Hello World!";
+
   return (
-    <BrowserRouter>
+    <Provider store={store}>
       <div className="container">
-        <Routes>
-          <Route path="/*" element={<Labs />} />
-          {/* 通配符路由 */}
-          <Route path="/hello" element={<HelloWorld />} />
-          <Route path="/tuiter/*" element={<Tuiter />} />
-        </Routes>
+        <Router>
+          <Navigation />
+          <Routes>
+            <Route path="/admin"
+              element={<AdminScreen />} />
+            <Route path="/login"
+              element={<LoginScreen />} />
+            <Route path="/profile"
+              element={<ProfileScreen />} />
+          </Routes>
+        </Router>
       </div>
-    </BrowserRouter>
-    );
+    </Provider>
+
+  );
 }
 
 export default App;

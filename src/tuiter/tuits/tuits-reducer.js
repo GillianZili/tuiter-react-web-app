@@ -42,7 +42,7 @@ const tuitsSlice = createSlice({
                 state.tuits = []
             },
 
-        [findTuitsThunk.fulfilled]:
+        [findTuitsThunk.fulfilled]://空obj:{}; 写死字符串：{"xkm"：123}，变量字符串：{[变量]:123}
             (state, { payload }) => {
                 state.loading = false
                 state.tuits = payload
