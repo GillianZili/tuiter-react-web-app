@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
-import { loginThunk } from "../services/auth-thunks";
+import { registerThunk } from "../services/auth-thunks";
 
-function LoginScreen() {
+function RegisterScreen() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const handleLogin = async () => {
+    const handleRegister = async () => {
         try {
-            await dispatch(loginThunk({ username, password }));
+            await dispatch(registerThunk({ username, password }));
             navigate("/profile");
         } catch (e) {
             alert(e);
@@ -18,7 +18,7 @@ function LoginScreen() {
     };
     return (
         <div>
-            <h1>Login Screen</h1>
+            <h1>Register Screen</h1>
             <div>
                 <label>Username</label>
                 <input className="form-control"
@@ -35,11 +35,11 @@ function LoginScreen() {
                 />
             </div>
 
-            <button onClick={handleLogin}>
-                Login
+            <button onClick={handleRegister}>
+                Register
             </button>
         </div>
     );
 }
 
-export default LoginScreen;
+export default RegisterScreen;
